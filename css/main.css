@@ -102,10 +102,9 @@ html {
 }
 
 body {
-    height: 100%;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 0 2em;
+    padding: 0em 2em;
     font-size: 1.25em;
     display: flex;
     justify-content: center;
@@ -124,7 +123,8 @@ p span {
     font-family: 'Lora', sans-serif;
   }
 
-header, footer {
+header, 
+footer {
       display: flex;
       width: 100%;
       justify-content: flex-start;
@@ -246,6 +246,27 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media all and (max-width: 768px) {
+    body {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-items {
+        flex-basis: 30%;
+        border-bottom: none;
+
+    }
+}
+@media (min-width: 1200px) {
+    #div-2 p {
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+    padding: 0 40px;
+}
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
